@@ -1,51 +1,3 @@
-"██████╗░██╗░░░░░██╗░░░██╗░██████╗░░░░░░░░█████╗░░█████╗░███╗░░██╗███████╗██╗░██████╗░
-"██╔══██╗██║░░░░░██║░░░██║██╔════╝░░░░░░░██╔══██╗██╔══██╗████╗░██║██╔════╝██║██╔════╝░
-"██████╔╝██║░░░░░██║░░░██║██║░░██╗░█████╗██║░░╚═╝██║░░██║██╔██╗██║█████╗░░██║██║░░██╗░
-"██╔═══╝░██║░░░░░██║░░░██║██║░░╚██╗╚════╝██║░░██╗██║░░██║██║╚████║██╔══╝░░██║██║░░╚██╗
-"██║░░░░░███████╗╚██████╔╝╚██████╔╝░░░░░░╚█████╔╝╚█████╔╝██║░╚███║██║░░░░░██║╚██████╔╝
-"╚═╝░░░░░╚══════╝░╚═════╝░░╚═════╝░░░░░░░░╚════╝░░╚════╝░╚═╝░░╚══╝╚═╝░░░░░╚═╝░╚═════╝░
-
-"import COC config
-source ~/AppData/Local/nvim/plugins/coc-config.vim
-
-""▄▀█ █ █▀█ █░░ █ █▄░█ █▀▀
-""█▀█ █ █▀▄ █▄▄ █ █░▀█ ██▄
-
-"" enable tabline
-"let g:airline#extensions#tabline#enabled = 1
-"let g:airline#extensions#tabline#left_sep = ''
-"let g:airline#extensions#tabline#left_alt_sep = ''
-"let g:airline#extensions#tabline#right_sep = ''
-"let g:airline#extensions#tabline#right_alt_sep = ''
-"let g:ariline_powerline_fonts = 1
-"let g:ariline_theme='onedark'
-
-  "if !exists('g:airline_symbols')
-    "let g:airline_symbols = {}
-  "endif
-
-"" airline symbols
-"let g:airline_left_sep = ''
-"let g:airline_left_alt_sep = ''
-"let g:airline_right_sep = ''
-"let g:airline_right_alt_sep = ''
-"let g:airline_symbols.branch = ''
-"let g:airline_symbols.readonly = ''
-"let g:airline_symbols.linenr = ''
-
-"" Switch to your current theme
-"let g:airline_theme = 'onedark'
-
-"" Always show tabs
-"set showtabline=2
-
-""Git integration config
-"let g:signify_sign_add               = '+'
-"let g:signify_sign_delete            = '_'
-"let g:signify_sign_delete_first_line = '‾'
-"let g:signify_sign_change            = '~'
-
-" HTML, JSX
 let g:closetag_filenames = '*.html,*.js,*.jsx,*.ts,*.tsx'
 " Lightlane
 let g:lightline = {
@@ -65,7 +17,7 @@ let g:lightline = {
       \   'gitbranch': 'fugitive#head',
       \   'kitestatus': 'kite#statusline'
       \ },
-      \ 'colorscheme': 'gruvbox',
+      \ 'colorscheme': 'onedark',
       \ 'subseparator': {
       \   'left': '',
       \   'right': ''
@@ -88,8 +40,19 @@ let g:UltiSnipsListSnippets="<C-_>"
 let g:UltiSnipsJumpForwardTrigger="<tab>"
 let g:UltiSnipsJumpBackwardTrigger="<S-tab>"
 
+" Virtual Environment
+let g:python3_host_prog='~/Python310/python.exe'
+
 " kite
 "let g:kite_supported_languages = ['*']
+" Python, JavaScript, Go
+"let g:kite_supported_languages = ['python', 'javascript', 'go', 'html', 'css']
+
+" All the languages Kite supports
+let g:kite_supported_languages = ['*']
+
+" Turn off Kite
+let g:kite_supported_languages = []
 let g:coc_global_extensions = [
       \ 'coc-tsserver'
       \ ]
@@ -116,6 +79,12 @@ set hidden
 set nobackup
 set nowritebackup
 
+"rainbow customization
+let g:rainbow#max_level = 16
+let g:rainbow#pairs = [['(', ')'], ['[', ']']]
+
+" List of colors that you do not want. ANSI code or #RRGGBB
+let g:rainbow#blacklist = [233, 234]
 " Better display for messages
 set cmdheight=1
 

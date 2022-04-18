@@ -98,9 +98,13 @@ function! OpenTerminal()
     execute "q"
   else
     " open terminal
-    "execute vsp term://git "
-
-    " turn off numbers
+    "execute ":vs |:terminal"
+    execute ":vnew term://bash"
+    "
+    "
+    "
+    "
+    "turn off numbers
     execute "set nonu"
     execute "set nornu"
 

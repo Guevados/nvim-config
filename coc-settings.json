@@ -1,10 +1,14 @@
-{
-  "languageserver": {
-    "go": {
-      "command": "gopls",
-      "rootPatterns": ["go.mod"],
-      "trace.server": "verbose",
-      "filetypes": ["go"]
+"languageserver":{
+   "ccls": {
+    "command": "ccls",
+    "filetypes": ["c", "cpp", "objc", "objcpp"],
+    "trace.server": "verbose",
+    "initializationOptions": {
+      "cacheDirectory": "/tmp/ccls"
     }
   }
+}
+
+{
+  "suggest.nosel": false,
 }
