@@ -103,7 +103,8 @@ set diffopt+=vertical
 
 
 " Highlight symbol under cursor on CursorHold
-
+let g:indentLine_char = 'c'
+let g:indentLine_char_list = ['|', '¦', '┆', '┊']
 
 let $FZF_DEFAULT_OPTS='--layout=reverse'
 "let g:fzf_layout = { 'window': 'call FloatingFZF()' }
@@ -145,5 +146,3 @@ let $FZF_DEFAULT_OPTS='--layout=reverse'
     "" has been found.
     "return search_result
 "endfunction
-
-e

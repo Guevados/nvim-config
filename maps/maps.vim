@@ -23,7 +23,7 @@ cnoreabbrev diff Gdiff
 
 " plugs
 map <Leader>nt :NERDTreeFind<CR>
-map <Leader>p :Files<CR>
+map <Leader>P :Files<CR>
 map <Leader>ag :Ag<CR>
 
 " tmux navigator

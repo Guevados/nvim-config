@@ -16,6 +16,9 @@ Plug 'NLKNguyen/papercolor-theme'
 "  Tree
 Plug 'preservim/nerdtree'
 
+" Emmet
+Plug 'mattn/emmet-vim'
+
 " Typing & Close pairs ''
 Plug 'jiangmiao/auto-pairs'
 Plug 'alvan/vim-closetag'
@@ -44,7 +47,8 @@ Plug 'yggdroot/indentline'
 Plug 'preservim/nerdcommenter'
 
 "NERDTREE
-Plug 'ryanoasis/vim-devicons'
+"Plug 'ryanoasis/vim-webdevicons'
+"Plug 'ryanoasis/nerd-fonts'
 
 "Git Integration ______________
 Plug 'tpope/vim-fugitive'
