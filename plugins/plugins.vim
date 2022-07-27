@@ -8,6 +8,9 @@ Plug 'sheerun/vim-polyglot'
 Plug 'maximbaz/lightline-ale'
 Plug 'itchyny/lightline.vim'
 
+" Tranparent
+Plug 'tribela/vim-transparent'
+
 "Themes
 Plug 'morhetz/gruvbox'
 Plug 'whatyouhide/vim-gotham'
