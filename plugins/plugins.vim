@@ -1,26 +1,20 @@
-"Pchristoomeylugins
 call plug#begin('~/.vim/plugged')
 
-"  syntax
+" Syntax
 Plug 'sheerun/vim-polyglot'
 
-" status bar
-Plug 'maximbaz/lightline-ale'
-Plug 'itchyny/lightline.vim'
+" Status bar
+Plug 'nvim-lualine/lualine.nvim'
+Plug 'kyazdani42/nvim-web-devicons'
 
 " Tranparent
 Plug 'tribela/vim-transparent'
 
-"Themes
-Plug 'morhetz/gruvbox'
+" Themes
 Plug 'whatyouhide/vim-gotham'
-Plug 'joshdick/onedark.vim'
-Plug 'NLKNguyen/papercolor-theme'
-"  Tree
-Plug 'preservim/nerdtree'
 
-" Emmet
-Plug 'mattn/emmet-vim'
+" Tree
+Plug 'preservim/nerdtree'
 
 " Typing & Close pairs ''
 Plug 'jiangmiao/auto-pairs'
@@ -31,15 +25,11 @@ Plug 'tpope/vim-surround'
 Plug 'christoomey/vim-tmux-navigator'
 Plug 'benmills/vimux'
 
-"Autocomplete
+" Autocomplete
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'github/copilot.vim'
 
-" test
-Plug 'tyewang/vimux-jest-test'
-Plug 'janko-m/vim-test'
-
-"IDE
+" IDE
 Plug 'editorconfig/editorconfig-vim'
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
@@ -49,17 +39,13 @@ Plug 'mhinz/vim-signify'
 Plug 'yggdroot/indentline'
 Plug 'preservim/nerdcommenter'
 
-"NERDTREE
-"Plug 'ryanoasis/vim-webdevicons'
-"Plug 'ryanoasis/nerd-fonts'
-
-"Git Integration ______________
+" Git Integration ______________
 Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-repeat'
 Plug 'tpope/vim-rhubarb'
 Plug 'junegunn/gv.vim'
 
-"Smooth Scrolling
+" Smooth Scrolling
 Plug 'psliwka/vim-smoothie'
 
 " Virtual Environment

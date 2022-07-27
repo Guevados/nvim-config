@@ -1,30 +1,6 @@
 let g:closetag_filenames = '*.html,*.js,*.jsx,*.ts,*.tsx'
-" Lightlane
-let g:lightline = {
-      \ 'active': {
-      \   'left': [['mode', 'paste'], [], ['relativepath', 'modified']],
-      \   'right': [['kitestatus'], ['filetype', 'percent', 'lineinfo'], ['gitbranch']]
-      \ },
-      \ 'inactive': {
-      \   'left': [['inactive'], ['relativepath']],
-      \   'right': [['bufnum']]
-      \ },
-      \ 'component': {
-      \   'bufnum': '%n',
-      \   'inactive': 'inactive'
-      \ },
-      \ 'component_function': {
-      \   'gitbranch': 'fugitive#head',
-      \   'kitestatus': 'kite#statusline'
-      \ },
-      \ 'colorscheme': 'onedark',
-      \ 'subseparator': {
-      \   'left': '',
-      \   'right': ''
-      \ }
-      \}
 
-"  nerdtree
+" Nerdtree
 let NERDTreeShowHidden=1
 let NERDTreeQuitOnOpen=1
 let NERDTreeAutoDeleteBuffer=1
@@ -43,26 +19,13 @@ let g:UltiSnipsJumpBackwardTrigger="<S-tab>"
 " Virtual Environment
 let g:python3_host_prog='~/Python310/python.exe'
 
-" kite
-"let g:kite_supported_languages = ['*']
-" Python, JavaScript, Go
-"let g:kite_supported_languages = ['python', 'javascript', 'go', 'html', 'css']
-
-" All the languages Kite supports
-let g:kite_supported_languages = ['*']
-
-" Turn off Kite
-let g:kite_supported_languages = []
-let g:coc_global_extensions = [
-      \ 'coc-tsserver'
-      \ ]
 " tmux navigator
 let g:tmux_navigator_no_mappings = 1
 
-" coc
+" Coc
 autocmd FileType scss setl iskeyword+=@-@
 
-" vim fugitive
+" Vim fugitive
 command! -bang -nargs=? -complete=dir GFiles
   \ call fzf#vim#gitfiles(<q-args>, fzf#vim#with_preview(), <bang>0)
 
@@ -72,14 +35,14 @@ command! -bang -nargs=* Ag
 command! -bang -nargs=? -complete=dir Files
   \ call fzf#vim#files(<q-args>, fzf#vim#with_preview(), <bang>0)
 
-" if hidden is not set, TextEdit might fail.
+" If hidden is not set, TextEdit might fail.
 set hidden
 
 " Some servers have issues with backup files, see #649
 set nobackup
 set nowritebackup
 
-"rainbow customization
+" Rainbow customization
 let g:rainbow#max_level = 16
 let g:rainbow#pairs = [['(', ')'], ['[', ']']]
 

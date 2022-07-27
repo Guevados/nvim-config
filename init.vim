@@ -7,7 +7,7 @@ set clipboard=unnamedplus
 syntax enable
 set showcmd
 set ruler
-set cursorline
+"set cursorline
 set encoding=UTF-8
 set showmatch
 set termguicolors
@@ -25,9 +25,6 @@ set smartcase                    				" ...unless they contain at least one capit
 "-------------------------------Sources-------------------------------
 source $HOME/.config/nvim/plugins/plugins.vim
 source $HOME/.config/nvim/plugins/plug-config.vim
-source $HOME/.config/nvim/plugins/icons.vim
-source $HOME/.config/nvim/plugins/emmet.vim
 source $HOME/.config/nvim/themes/themes.vim
-"source $HOME/.config/nvim/themes/onedark.vim
 source $HOME/.config/nvim/maps/maps.vim
 "source ~/AppData/Local/nvim/copilot.vim
