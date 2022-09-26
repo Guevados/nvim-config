@@ -1,4 +1,4 @@
 "theme config
-colorscheme gotham256
+colorscheme terafox 
 let g:gruvbox_contrast_dark = "hard"
 set background=dark

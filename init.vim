@@ -24,8 +24,8 @@ set ignorecase                    			" searches are case insensitive...
 set smartcase                    				" ...unless they contain at least one capital letter
 "-------------------------------Sources-------------------------------
 source $HOME/.config/nvim/plugins/plugins.vim
+source $HOME/.config/nvim/plugins/coc-config.vim
 source $HOME/.config/nvim/plugins/plug-config.vim
 source $HOME/.config/nvim/plugins/lualine.vim
 source $HOME/.config/nvim/themes/themes.vim
 source $HOME/.config/nvim/maps/maps.vim
-"source ~/AppData/Local/nvim/copilot.vim

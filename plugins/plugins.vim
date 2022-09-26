@@ -12,8 +12,9 @@ Plug 'tribela/vim-transparent'
 
 " Themes
 Plug 'whatyouhide/vim-gotham'
+Plug 'EdenEast/nightfox.nvim'
 
-" Tree
+"Tree
 Plug 'preservim/nerdtree'
 
 " Typing & Close pairs ''
@@ -27,7 +28,7 @@ Plug 'benmills/vimux'
 
 " Autocomplete
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
-Plug 'github/copilot.vim'
+"Plug 'github/copilot.vim'
 
 " IDE
 Plug 'editorconfig/editorconfig-vim'
@@ -50,6 +51,9 @@ Plug 'psliwka/vim-smoothie'
 
 " Virtual Environment
 Plug 'sansyrox/vim-python-virtualenv'
+
+" Smart contract Ethereum
+Plug 'tomlion/vim-solidity'
 
 "_____________________________
 call plug#end()

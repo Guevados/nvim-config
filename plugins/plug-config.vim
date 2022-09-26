@@ -10,7 +10,7 @@ let NERDTreeShowLineNumbers=1
 let NERDTreeMapOpenInTab='\t'
 
 " Trigger configuration. Do not use <tab> if you use https://github.com/Valloric/YouCompleteMe.
-let g:UltiSnipsSnippetDirectories=[$HOME.'/configs/.vim/UltiSnips']
+"let g:UltiSnipsSnippetDirectories=[$HOME.'/configs/.vim/UltiSnips']
 let g:UltiSnipsExpandTrigger="<tab>"
 let g:UltiSnipsListSnippets="<C-_>"
 let g:UltiSnipsJumpForwardTrigger="<tab>"

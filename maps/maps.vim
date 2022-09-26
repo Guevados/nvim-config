@@ -99,7 +99,7 @@ function! OpenTerminal()
   else
     " open terminal
     "execute ":vs |:terminal"
-    execute ":vnew term://bash"
+    execute ":vnew term://alacritty"
     "
     "
     "
