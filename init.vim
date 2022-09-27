@@ -17,6 +17,7 @@ set laststatus=2
 set backspace=2
 set guioptions-=T
 set guioptions-=L
+set nocompatible
 "" Searching
 set hlsearch                     				" highlight matches
 set incsearch                    				" incremental searching

@@ -2,10 +2,12 @@ call plug#begin('~/.vim/plugged')
 
 " Syntax
 Plug 'sheerun/vim-polyglot'
+Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
 
 " Status bar
 Plug 'nvim-lualine/lualine.nvim'
 Plug 'kyazdani42/nvim-web-devicons'
+Plug 'ryanoasis/vim-devicons'
 
 " Tranparent
 Plug 'tribela/vim-transparent'
@@ -13,6 +15,14 @@ Plug 'tribela/vim-transparent'
 " Themes
 Plug 'whatyouhide/vim-gotham'
 Plug 'EdenEast/nightfox.nvim'
+
+" React Syntax
+Plug 'pangloss/vim-javascript'
+Plug 'mxw/vim-jsx'
+Plug 'mattn/emmet-vim'
+
+" Asynchronous Lint Engine
+Plug 'w0rp/ale'
 
 "Tree
 Plug 'preservim/nerdtree'
@@ -48,9 +58,6 @@ Plug 'junegunn/gv.vim'
 
 " Smooth Scrolling
 Plug 'psliwka/vim-smoothie'
-
-" Virtual Environment
-Plug 'sansyrox/vim-python-virtualenv'
 
 " Smart contract Ethereum
 Plug 'tomlion/vim-solidity'
