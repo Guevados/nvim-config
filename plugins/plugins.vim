@@ -3,6 +3,7 @@ call plug#begin('~/.vim/plugged')
 " Syntax
 Plug 'sheerun/vim-polyglot'
 Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
+Plug 'tpope/vim-sleuth'
 
 " Status bar
 Plug 'nvim-lualine/lualine.nvim'
@@ -47,7 +48,7 @@ Plug 'junegunn/fzf.vim'
 Plug 'terryma/vim-multiple-cursors'
 Plug 'easymotion/vim-easymotion'
 Plug 'mhinz/vim-signify'
-Plug 'yggdroot/indentline'
+Plug 'Yggdroot/indentLine'
 Plug 'preservim/nerdcommenter'
 
 " Git Integration ______________
